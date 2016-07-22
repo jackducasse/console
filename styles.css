@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: #333;
+}
+a{
+  color: purple;
+}
+.container{
+  position: relative;
+  width: 70%;
+  max-width: 1024px;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+  section{
+    padding: 20px;
+    overflow: hidden;
+  }
+    .main{
+      position: relative;
+      width: 60%;
+      padding: 35px 10px;
+      float: left;
+      overflow: hidden;
+    }
+      .main .card{
+        padding: 15px;
+        border-right: 1px solid #ddd;
+      }
+      .main .avatar{
+        display: flex;
+        margin-top: -5px;
+        margin-right: 10px;
+        height: 75px;
+        width: 75px;
+        float: left;
+        font-size: 28px;
+      }
+      .main header{
+        font-size: 22px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .main .sub-header{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    .secondary{
+      position: relative;
+      width: 40%;
+      float: left;
+    }
+      .secondary .card{
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .secondary header{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .secondary .sub-header{
+        display: none;
+      }
+      .avatar{
+        display: inline-flex;
+        margin-top: 12.5px;
+        justify-content: center;
+        align-items: center;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+        color: #fff;
+        background: #0083cf;
+        border-radius: 100px;
+        height: 45px;
+        width: 45px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .paper-plane::before{
+        content: '\f1d8';
+      }
+      .child::before{
+        content: '\f1ae';
+      }
+      .pied-piper::before{
+        content: '\f2ae';
+      }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    font-size: 13px;
+  }
+    footer .group{
+      float: left;
+    }
+    footer .group:last-of-type{
+      float: right;
+    }
+      footer .group .item{
+        display: block;
+      }
